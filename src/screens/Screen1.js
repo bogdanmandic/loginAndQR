@@ -93,8 +93,8 @@ export default class Screen1 extends Component {
               </Item>
             </View>
             <View style={buttonContainer}>
-              <Button block style={this.state.isChecked ? styles.buttonLogDisabled : styles.buttonLog} onPress={this.logIn.bind(this)}>
-                <Text style={this.state.isChecked ? styles.buttonTextDisabled : styles.buttonText}S>Prijavite se </Text>
+              <Button style={styles.buttonLog} onPress={this.logIn.bind(this)}>
+                <Text style={ styles.buttonTextDisabled}S>Prijavite se </Text>
               </Button>
 
             </View>
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   buttonLog: {
-    backgroundColor: '#d8d8d8',
+    backgroundColor: '#646464',
     width: '100%',
     height: '23%',
     justifyContent: 'center',
