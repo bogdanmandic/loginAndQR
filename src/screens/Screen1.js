@@ -14,7 +14,7 @@ export default class Screen1 extends Component {
     this.state = {
       email: '',
       password: '',
-
+      isChecked: true
     };
   }
 
@@ -68,7 +68,6 @@ export default class Screen1 extends Component {
             <View>
               <Item>
 
-                <FontAwesome name="lock" size={20} style={mainStyles.textColorSecondary} />
                 <Input style={FontInput}
                   placeholder="Uneti korisničko ime"
                   underlineColorAndroid='white'
@@ -81,7 +80,7 @@ export default class Screen1 extends Component {
               </Item>
               <Item>
 
-                <FontAwesome name="lock" size={20} style={mainStyles.textColorSecondary} />
+          
                 <Input style={FontInput}
                   placeholder="Uneti lozinku"
                   underlineColorAndroid='white'
@@ -95,7 +94,7 @@ export default class Screen1 extends Component {
             </View>
             <View style={buttonContainer}>
               <Button block style={this.state.isChecked ? styles.buttonLogDisabled : styles.buttonLog} onPress={this.logIn.bind(this)}>
-                <Text style={[mainStyles.textColorWhite, mainStyles.fontUbuntu]}>Prijavite se </Text>
+                <Text style={this.state.isChecked ? styles.buttonTextDisabled : styles.buttonText}S>Prijavite se </Text>
               </Button>
 
             </View>
@@ -155,14 +154,14 @@ const styles = StyleSheet.create({
   buttonLog: {
     backgroundColor: '#d8d8d8',
     width: '100%',
-    height: '47%',
+    height: '23%',
     justifyContent: 'center',
     marginBottom: 30
   },
   buttonLogDisabled: {
     backgroundColor: '#BDB9B9',
     width: '100%',
-    height: '47%',
+    height: '23%',
     justifyContent: 'center',
     marginBottom: 30
   },
@@ -196,7 +195,7 @@ const styles = StyleSheet.create({
   buttonContainer: {
     width: '70%',
     alignSelf: 'center',
-    marginTop: 20
+    marginTop: 100
   },
   textLink: {
     textAlign: 'center',
@@ -207,7 +206,7 @@ const styles = StyleSheet.create({
   },
   formStyle: {
     flex: 1,
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     paddingBottom: 15
   },
   FontInput: {
