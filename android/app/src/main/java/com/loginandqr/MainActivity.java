@@ -1,4 +1,4 @@
-package com.simpleflux;
+package com.loginandqr;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "simpleFlux";
+        return "loginAndQR";
     }
 }

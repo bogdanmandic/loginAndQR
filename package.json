@@ -1,5 +1,5 @@
 {
-  "name": "simpleFlux",
+  "name": "loginAndQR",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,8 +7,13 @@
     "test": "jest"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
+    "md5": "^2.2.1",
+    "native-base": "^2.3.9",
     "react": "16.0.0",
     "react-native": "0.51.0",
+    "react-native-camera": "0.12.0",
+    "react-native-qrcode-scanner": "0.0.30",
     "react-native-router-flux": "^4.0.0-beta.24"
   },
   "devDependencies": {
